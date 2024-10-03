@@ -1,0 +1,55 @@
+.button {
+    border: none;
+    height: 40px;
+    padding: 6px 12px;
+    background-color: #333;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+
+.button.blue {
+    background-color: #3498db;
+}
+
+.button.blue:hover {
+    background-color: #2980b9;
+}
+
+.button.green {
+    background-color: #2ecc71;
+}
+
+.button.green:hover {
+    background-color: #27ae60; 
+}
+
+.button.red {
+    background-color: #e74c3c;
+}
+
+.button:hover {
+    box-shadow: inset 200px 0 0 rgba(255, 255, 255, 0.1);
+}
+
+@media(max-width: 480px) {
+    .button.mobile {
+        color: transparent;
+        font-size: 0;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        position: fixed;
+        top: 90vh;
+        left: 80vw;
+    }
+
+    .button.mobile::before {
+        content: "+";
+        color: #333;
+        font-size: 2rem;
+        width: 100%;
+        height: 100%;
+    }
+}

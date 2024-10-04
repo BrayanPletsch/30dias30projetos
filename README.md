@@ -17,7 +17,11 @@ Meu [LinkedIn](https://www.linkedin.com/in/brayan-pletsch/). Fico aberto a suges
 
 O projeto "Pesquisador de Perfis do GitHub" é uma aplicação simples, porém poderosa, que permite a qualquer pessoa buscar informações detalhadas sobre um usuário do GitHub. Ao digitar o nome de usuário, a aplicação traz dados como número de seguidores, quantidade de repositórios públicos, e os repositórios mais recentes, tudo de forma dinâmica e organizada. Isso é feito utilizando a API do GitHub para capturar as informações e exibi-las de forma visualmente atraente.
 
-[Visualização no Vercel](VOU-COLOCAR-O-LINK-DEPOIS)
+
+
+**(Clique no link abaixo para que você possa visualizar e testar o site)**
+
+[Visualização no Vercel](https://30dias30projetos-t1re.vercel.app/)
 
 ![github-profile](https://github.com/user-attachments/assets/fd202c81-0b24-4433-9f19-bdfce0ab20c2)
 
@@ -93,7 +97,9 @@ A calculadora também inclui funcionalidades como:
 - **Exclusão de um número** (DEL);
 - **Exibição de resultados**.
 
-[Visualização no Vercel](VOU-COLOCAR-O-LINK-DEPOIS)
+**(Clique no link abaixo para que você possa visualizar e testar o site)**
+
+[Visualização no Vercel](https://30dias30projetos-xm34.vercel.app/)
 
 ![web-calculator](https://github.com/user-attachments/assets/878148e6-99ea-4940-bfd7-226a204c0f14)
 
@@ -181,9 +187,11 @@ Este projeto é um sistema de **CRUD (Create, Read, Update, Delete)** simples pa
 
 A interface é organizada, com uma tabela exibindo os dados e um formulário que pode ser aberto em um modal para adicionar ou editar clientes.
 
-[Visualização no Vercel](VOU-COLOCAR-O-LINK-DEPOIS)
+**(Clique no link abaixo para que você possa visualizar e testar o site)**
 
-![crud-em-js](https://github.com/user-attachments/assets/d599d6d9-ec77-4dc8-9b59-2f083a3e2432)
+[Visualização no Vercel](https://30dias30projetos.vercel.app/)
+
+![crud-em-js](https://github.com/user-attachments/assets/9b568bec-5b12-4df2-9196-d2cd0fcfb71b)
 
 ### Code preview:
 
@@ -246,7 +254,9 @@ Com este CRUD, você pode gerenciar clientes facilmente com funções intuitivas
 # DIA 4 - Drag & Drop
 O quarto mini projeto é um Drag & Drop, que permite arrastar itens de uma lista de um container para outro, ou alterar a posição dos itens dentro do mesmo container.
 
-[Visualização no Vercel](VOU-COLOCAR-DEPOIS)
+**(Clique no link abaixo para que você possa visualizar e testar o site)**
+
+[Visualização no Vercel](https://30dias30projetos-xm34.vercel.app/)
 
 ![draganddrop](https://github.com/user-attachments/assets/eafe5513-a35f-435c-8f65-3b4300cc43ac)
 

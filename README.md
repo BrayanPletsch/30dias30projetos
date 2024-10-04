@@ -21,7 +21,7 @@ O projeto "Pesquisador de Perfis do GitHub" é uma aplicação simples, porém p
 
 **(Clique no link abaixo para que você possa visualizar e testar o site)**
 
-[Visualização no Vercel](brayan-github-profile-research.vercel.app)
+[Visualização no Vercel](https://brayan-github-profile-research.vercel.app)
 
 ![github-profile](https://github.com/user-attachments/assets/fd202c81-0b24-4433-9f19-bdfce0ab20c2)
 
@@ -99,7 +99,7 @@ A calculadora também inclui funcionalidades como:
 
 **(Clique no link abaixo para que você possa visualizar e testar o site)**
 
-[Visualização no Vercel](brayan-web-calculator.vercel.app)
+[Visualização no Vercel](https://brayan-web-calculator.vercel.app)
 
 ![web-calculator](https://github.com/user-attachments/assets/878148e6-99ea-4940-bfd7-226a204c0f14)
 
@@ -189,7 +189,7 @@ A interface é organizada, com uma tabela exibindo os dados e um formulário que
 
 **(Clique no link abaixo para que você possa visualizar e testar o site)**
 
-[Visualização no Vercel](brayan-crud-in-js.vercel.app)
+[Visualização no Vercel](https://brayan-crud-in-js.vercel.app)
 
 ![crud-em-js](https://github.com/user-attachments/assets/9b568bec-5b12-4df2-9196-d2cd0fcfb71b)
 
@@ -256,7 +256,7 @@ O quarto mini projeto é um Drag & Drop, que permite arrastar itens de uma lista
 
 **(Clique no link abaixo para que você possa visualizar e testar o site)**
 
-[Visualização no Vercel](brayan-drag-n-drop.vercel.app)
+[Visualização no Vercel](https://brayan-drag-n-drop.vercel.app)
 
 ![draganddrop](https://github.com/user-attachments/assets/eafe5513-a35f-435c-8f65-3b4300cc43ac)
 

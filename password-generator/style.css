@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad&family=Work+Sans&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Afacad', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+body {
+    background: #002e39;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 1;
+    margin: 12%;
+    width: 90%;
+    max-width: 700px;
+    text-align: center;
+}
+
+.container h1 {
+    font-weight: 500;
+    font-size: 45px;
+}
+
+.container span {
+    color: #008542;
+    border-bottom: 4px solid #008542;
+    padding-bottom: 7px;
+}
+
+.container button img {
+    width: 28px;
+    margin-right: 10px;
+}
+
+.generate-button {
+    border: 0;
+    outline: 0;
+    background: #008542;
+    color: white;
+    font-size: 22px;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 26px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: auto;
+}
+
+.generate-button:hover {
+    background: #00c563;
+    transition: all 150ms;
+}
+
+.display {
+    width: 100%;
+    margin: 50px 0 30px 0;
+    background: white;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 26px 20px;
+    border-radius: 10px;
+}
+
+.display img {
+    width: 30px;
+    cursor: pointer;
+}
+
+.display input {
+    border: 0;
+    outline: 0;
+    font-size: 24px;
+    width: 90%;
+    background: none;
+}
+
+.footer {
+    background: #004452;
+    color: #bbb;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 0.85rem;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}

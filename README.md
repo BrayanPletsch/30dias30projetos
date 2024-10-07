@@ -1,5 +1,7 @@
-# 30 dias, 30 projetos
-30 days project. html, css &amp; javascript.
+<h1 align="center">
+  30 dias, 30 projetos<br/>
+  <a>30 days project. html, css &amp; javascript.</a>
+</h1>
 
 O projeto "30 Dias, 30 Projetos" tem como objetivo aprofundar meus conhecimentos em JavaScript. Consiste em 30 mini projetos, cada um explorando uma funcionalidade única, desenvolvidos com HTML, CSS e JavaScript.
 
@@ -252,7 +254,10 @@ Com este CRUD, você pode gerenciar clientes facilmente com funções intuitivas
 ---
 
 # DIA 4 - Drag & Drop
-O quarto mini projeto é um Drag & Drop, que permite arrastar itens de uma lista de um container para outro, ou alterar a posição dos itens dentro do mesmo container.
+
+O quarto mini projeto é um sistema de **Drag & Drop**, permitindo ao usuário arrastar itens de uma lista em um container para outro container ou reorganizá-los dentro do mesmo container. 
+
+Essa funcionalidade é muito útil para criar interfaces interativas e organizadas, onde o usuário tem a liberdade de mover elementos de maneira intuitiva.
 
 **(Clique no link abaixo para que você possa visualizar e testar o site)**
 
@@ -260,30 +265,30 @@ O quarto mini projeto é um Drag & Drop, que permite arrastar itens de uma lista
 
 ![draganddrop](https://github.com/user-attachments/assets/eafe5513-a35f-435c-8f65-3b4300cc43ac)
 
-**Code preview:**
+### Code preview:
 ```javascript
 let lists = document.getElementsByClassName("list");
 let rightBox = document.getElementById("right");
 let leftBox = document.getElementById("left");
 
 for (let list of lists) {
-    list.addEventListener("dragstart", function(e) {
+    list.addEventListener("dragstart", function(e){
         let selected = e.target;
 
-        rightBox.addEventListener("dragover", function(e) {
+        rightBox.addEventListener("dragover", function(e){
             e.preventDefault();
         });
 
-        rightBox.addEventListener("drop", function() {
+        rightBox.addEventListener("drop", function(){
             rightBox.appendChild(selected);
             selected = null;
         });
 
-        leftBox.addEventListener("dragover", function(e) {
+        leftBox.addEventListener("dragover", function(e){
             e.preventDefault();
         });
 
-        leftBox.addEventListener("drop", function() {
+        leftBox.addEventListener("drop", function(){
             leftBox.appendChild(selected);
             selected = null;
         });
@@ -291,11 +296,113 @@ for (let list of lists) {
 }
 ```
 
-**Esse trecho de código faz o seguinte:**
-1. **Arrastar Itens:** Quando um item da lista é arrastado, ele é selecionado como `selected`.
-2. **Área de Soltar à Direita:** O evento `dragover` permite que o item seja solto na área à direita. Ao soltar, o item selecionado é anexado a essa área.
-3. **Área de Soltar à Esquerda:** Da mesma forma, o item pode ser solto de volta na área à esquerda, anexando-se a ela novamente.
+### Como funciona o código:
 
-Dessa forma, o projeto permite um gerenciamento dinâmico de listas, facilitando a reorganização e a transferência de itens entre diferentes containers.
+1. **Arrastar o item**: O evento `dragstart` detecta quando o usuário começa a arrastar um item da lista, armazenando o elemento selecionado.
+   
+2. **Sobreposição dos containers**: Os eventos `dragover` em ambos os containers (esquerda e direita) permitem que o elemento seja arrastado sobre eles sem interrupção.
+
+3. **Soltar o item**: O evento `drop` é acionado quando o item é solto em um dos containers, e o item é movido para a nova posição.
+
+Este projeto fornece uma experiência visual fluida, permitindo que o usuário organize os itens de forma prática.
+
+---
+
+---
+
+# DIA 5 - Gerador de Senhas Aleatórias
+
+O projeto "Gerador de Senhas Aleatórias" é uma ferramenta simples e eficiente que permite gerar senhas seguras e aleatórias com apenas um clique. Ele combina letras maiúsculas, minúsculas, números e símbolos, garantindo uma senha robusta de 12 caracteres. Além disso, há uma opção de copiar a senha gerada diretamente para a área de transferência, facilitando o uso imediato.
+
+**(Clique no link abaixo para que você possa visualizar e testar o site)**
+
+[Visualização no Vercel](https://brayan-password-generator.vercel.app/)
+
+![password-generator](https://github.com/user-attachments/assets/b4d095c9-ef9b-4137-9aa1-ffd1b866ff5d)
+
+### Code preview:
+
+```javascript
+const passwordBox = document.getElementById("password");
+const length = 12;
+const upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+const lowerCase = "abcdefghijklmnopqrstuvwxyz";
+const number = "0123456789";
+const symbol = "!@#$%";
+const allCharacter = upperCase + lowerCase + number + symbol;
+
+function createPassword() {
+    let password = "";
+    password += upperCase[Math.floor(Math.random() * upperCase.length)];
+    password += lowerCase[Math.floor(Math.random() * lowerCase.length)];
+    password += number[Math.floor(Math.random() * number.length)];
+    password += symbol[Math.floor(Math.random() * symbol.length)];
+
+    while (password.length < length) {
+        password += allCharacter[Math.floor(Math.random() * allCharacter.length)];
+    }
+
+    passwordBox.value = shufflePassword(password);
+}
+
+function shufflePassword(password) {
+    return password.split('').sort(() => 0.5 - Math.random()).join('');
+}
+
+function copyPassword() {
+    passwordBox.select();
+    navigator.clipboard.writeText(passwordBox.value);
+}
+```
+
+### Como funciona o código:
+
+1. **Geração de senha**: A função `createPassword` seleciona aleatoriamente caracteres de diferentes categorias (maiúsculas, minúsculas, números e símbolos), e os concatena até atingir o tamanho total de 12 caracteres.
+
+2. **Embaralhamento da senha**: Para aumentar a aleatoriedade, a função `shufflePassword` embaralha os caracteres da senha antes de exibi-la no campo de texto.
+
+3. **Cópia da senha**: Com a função `copyPassword`, a senha gerada pode ser copiada automaticamente para a área de transferência com um simples clique no ícone.
+
+Este projeto é útil para quem deseja criar senhas seguras de forma rápida e conveniente.
+
+---
+
+# DIA 6 - Gerador de QR Code
+
+O projeto "Gerador de QR Code" é uma aplicação prática e eficiente que permite a criação de códigos QR personalizados a partir de qualquer URL ou texto. Com apenas um clique, o usuário insere o conteúdo desejado e o sistema gera um QR Code correspondente, que pode ser facilmente utilizado em diversas aplicações.
+
+**(Clique no link abaixo para que você possa visualizar e testar o site)**
+
+[Visualização no Vercel](https://brayan-qr-code-generator.vercel.app/)
+
+![qr-code-generator](https://github.com/user-attachments/assets/3af4119b-5c24-4254-9a61-2cf4f8758fdd)
+
+### Code preview:
+
+```javascript
+const imgBox = document.getElementById("imgBox");
+const qrImage = document.getElementById("qrImage");
+const qrText = document.getElementById("qrText");
+
+function generateQR() {
+    const qrValue = qrText.value.trim();
+    if (qrValue) {
+        qrImage.src = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${qrValue}`;
+        qrImage.style.display = 'block';
+    } else {
+        qrImage.style.display = 'none';
+    }
+}
+```
+
+### Como funciona o código:
+
+1. **Entrada de dados**: O usuário insere um URL ou texto no campo de entrada (`qrText`). A função `generateQR` lê o valor e verifica se ele é válido.
+   
+2. **Geração do QR Code**: Utilizando a API `qrserver.com`, o QR Code é gerado dinamicamente com base no conteúdo inserido, e a imagem resultante é exibida na tela.
+
+3. **Exibição condicional**: Se o campo de entrada estiver vazio, a imagem do QR Code é ocultada para evitar erros de exibição.
+
+Este gerador de QR Code é ideal para quem precisa rapidamente criar códigos personalizados para compartilhar links ou informações de maneira fácil e acessível.
 
 ---

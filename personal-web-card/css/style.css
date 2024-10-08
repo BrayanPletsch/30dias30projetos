@@ -1,0 +1,66 @@
+/* Estilos globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Inclui bordas e padding no cálculo do tamanho */
+}
+
+body {
+    font-family: 'Source Code Pro', monospace;
+    background: url("../img/ab.png") no-repeat top center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #aeaeae;
+}
+
+/* Estilos para a caixa principal */
+.box {
+    background: #eee;
+    padding: 4rem;
+    box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.16);
+    border-radius: 50px;
+    text-align: center;
+}
+
+/* Estilos para o título e textos */
+.title {
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.box span {
+    font-size: 18px;
+}
+
+.box p {
+    margin: 1rem 0;
+}
+
+/* Estilos para a imagem de perfil */
+.profile-pic {
+    width: 300px;
+    height: 300px;
+    object-fit: cover; /* Corta e ajusta a imagem */
+    border-radius: 50%;
+    margin: 0 auto 3rem auto;
+}
+
+/* Estilos para a lista de redes sociais */
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+}
+
+.redes-sociais li {
+    margin-right: 1rem;
+    list-style: none;
+}
+
+.redes-sociais li a img {
+    width: 40px;
+    height: 40px;
+}
